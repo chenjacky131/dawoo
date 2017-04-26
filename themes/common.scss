@@ -1,6 +1,6 @@
 @charset "UTF-8";
 html,body{height: 100%;width: 100%;}
-body{margin: 0;overflow: hidden;}
+body{margin: 0;overflow: hidden;background: #000;}
 .big-swiper-container{ height: 100%;overflow: hidden;}
 // scss参数
 $psd-wdith:192;
@@ -307,32 +307,32 @@ $psd-wdith:192;
     }
     // 联系我们
     .slide2-tit{text-align: center;
-        img{width: 203rem /$psd-wdith;}                                  
+        img{}                                  
     }
     .slide2-txt1{    text-align: center;
-    font-size: 16rem /$psd-wdith;
+    font-size: 16px;
     color: #fff;
-    line-height: 32rem /$psd-wdith;
+    line-height: 32px;
     margin-top: 34rem /$psd-wdith;                         
     }
     .slide2-txt2{text-align: center;
-    font-size: 14rem /$psd-wdith;
+    font-size: 14px;
     color: #fff;
-    line-height: 24rem /$psd-wdith;
+    line-height: 24px;
     margin-top: 25rem /$psd-wdith;                          
     }
-    .slide2-btn{width:145rem /$psd-wdith;height:40rem /$psd-wdith;margin: 25rem /$psd-wdith auto 0;display: block;
+    .slide2-btn{width:145px;height:40px;margin: 25rem /$psd-wdith auto 0;display: block;
                 img{height: 100%;width: 100%;}       
     }
     // 品牌创新
     .p2{
         .pro-tit{text-align: center;
-            img{width: 337rem /$psd-wdith;}
+            img{width: 337px;}
         }
-        .txt1{color: #deaf50;font-size: 32rem /$psd-wdith;text-align: center;margin-top: 48rem /$psd-wdith;}
-        .txt2{color: #fff;font-size: 16rem /$psd-wdith;text-align: center;margin-top: 30rem /$psd-wdith;}
-        .pro-img{text-align: center;margin-top: 70rem /$psd-wdith;
-            img{width: 493rem /$psd-wdith;}
+        .txt1{color: #deaf50;font-size: 32px;text-align: center;margin-top: 48px;}
+        .txt2{color: #fff;font-size: 16px;text-align: center;margin-top: 30px;}
+        .pro-img{text-align: center;margin-top: 70px;
+            img{width: 493px;}
         }     
         .bra-img-01{text-align: center;margin: 80rem /$psd-wdith auto 0;width: 619rem /$psd-wdith;height: 134rem /$psd-wdith;
             &>img{float: left;cursor: pointer;transition:all 0.1s ease-out; 
@@ -363,9 +363,9 @@ $psd-wdith:192;
     // 产品亮点
     .p1{
      .pa-01{text-align: center;
-        img{width: 350rem /$psd-wdith;}
+        img{width: 350px;}
      }        
-     .txt1{font-size: 18rem /$psd-wdith;color: #fff;line-height:32rem /$psd-wdith;text-align: center;margin-top: 40rem /$psd-wdith;}
+     .txt1{font-size: 18px;color: #fff;line-height:32px;text-align: center;margin-top: 40px;}
      .pa-02{text-align: center;margin: 44rem /$psd-wdith auto 0;
             width: 618rem /$psd-wdith;height: 140rem /$psd-wdith;
             &>img{float: left;cursor: pointer;transition:all 0.1s ease-out; 
@@ -389,8 +389,8 @@ $psd-wdith:192;
                 }
             }
      }   
-     .slide2-btn{margin-top: 58rem /$psd-wdith;width: 145rem /$psd-wdith;
-    height: 40rem /$psd-wdith;}
+     .slide2-btn{margin-top: 58px;width: 145px;
+    height: 40px;}
     }
     // 合作伙伴
     .p3{
@@ -400,7 +400,7 @@ $psd-wdith:192;
         .par-img{text-align: center;padding-top: 96rem /$psd-wdith;
             img{width: 1203rem /$psd-wdith;}
         }
-        .par-txt{font-size: 16rem /$psd-wdith;color: #a29061;text-align: center;padding-top: 100rem /$psd-wdith;}
+        .par-txt{font-size: 16px;color: #a29061;text-align: center;padding-top: 100rem /$psd-wdith;}
     }
     // 动画
 
@@ -501,43 +501,53 @@ footer{
     li+li:before{content: '';position: absolute;left: -3px;top: 0;width:1px;height: 38rem /$psd-wdith;background: url(images/line01.png) no-repeat center;}
 }
 /* 媒体查询修改布局 */
-/* @media (max-width: 414px){// iphone6p以下
-.page2 .slide2-tit img{height: 50px;}
-.page2 .slide2-txt1{font-size: 12px; margin-top: 0;}
-.page2 .slide2-txt2{    margin-top: 0; font-size: 12px;}
-footer{height: 100px;padding-top: 5px;}    
-footer .list-inline > li{height: auto;    margin-bottom: 5px;  display: block;}
-.page2 .pro-tit img{height: 50px;  margin-top:46px;}   
-.page2 .p2 .txt1{font-size: 24px;   margin-top: 8px;}
-.page2 .p2 .txt2{    font-size: 12px; margin-top: 0;}
-.page2 .p2 .pro-img{display: none;}
-.page2 .p1 .pa-01 img{height: 50px;}
-.page2 .p1 .txt1{font-size: 12px;}
-.page2 .p1 .pa-02 img{display: none;}
-.page2 .p3 .par-tit img{height: 50px; margin-top: 40px;}
-.page2 .p3 .par-img img{width: 300px;}
-} */
+
 @media (min-width: 768px){
   .navbar-nav {
         margin-top: 12px;
     }  
 } 
-@media (max-width: 768px){
-     
+@media (max-width: 768px){// ipad以下设备
+     // logo
+     .navbar-brand>img{width: 150px;}
     .navbar-nav {
     @include bg-rgba(0,0,0,0.8);margin-top: 0;
     } 
     .navbar-collapse .dropdown-menu li > a{padding: 3px 0 0 20px !important;}
+    .page2 .p3 .par-img{padding: 0.5rem 10px 0;}
+    .page2 .p3 .par-img img{width: 100%;}
+    footer li + li:before{background: none;}
+    footer{padding-top: 10px;}
+    // 联系我们
+    .page2 .p4 .slide2-tit img{width: 160px;}
+    .page2 .slide2-txt1{font-size: 14px;line-height: 24px;}
+    .page2 .slide2-txt2{font-size: 12px;line-height: 20px;}
+    // 合作伙伴
+    .page2 .p3 .par-tit img{width: 260px;}
+    .page2 .p3 .par-txt{font-size: 14px;}
+    // 品牌优势
+    .page2 .p2 .pro-tit img{width: 250px;}
+    .page2 .p2 .txt1{font-size: 18px; margin-top: 10px;}
+    .page2 .p2 .txt2 { font-size: 14px; margin-top: 10px;}
+    // 亮点解析
+    .page2 .p1 .pa-01 img{width: 230px;}
+    .page2 .tab-content .tab-pane.p1 .center-box .content-wrap{margin-top: 0;}
+    .page2 .p1 .txt1 { font-size: 14px;line-height: 24px;padding: 0 5px;margin-top: 10px;}
+    .page2 .p1 .slide2-btn { margin-top: 20px;}
 }
 @media (max-width: 1080px) {
-    .page2 .sub-nav {position: absolute; left: 10px !important;  top: 120px;  right: 10px;
+    .page2 .sub-nav {position: absolute; left: 10px !important;  top: 80px;  right: 10px;
         .list-group .list-group-item {
             float: left;
             width: 25% !important; font-size: 12px !important;
         }
     } 
     footer{font-size: 12px !important;}
-    .p3 .content-wrap{margin-top:80px ;}
-    .p2 .content-wrap{margin-top:-8rem /$psd-wdith !important ;}
-    .p1 .content-wrap{margin-top:80px;}
+    .p3 .content-wrap{margin-top:40px ;}
+    .p2 .content-wrap{margin-top:0 !important ;}
+}
+@media (max-width: 320px) {// iphone5
+    .p3 .content-wrap {
+        margin-top: 80px;
+    }    
 }

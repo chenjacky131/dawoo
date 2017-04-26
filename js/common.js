@@ -1,12 +1,12 @@
 // 自适应代码
-if(document.documentElement.clientWidth<1366){
-	document.querySelector('html').style.fontSize='136.6px';
+if(document.documentElement.clientWidth<768){
+	document.querySelector('html').style.fontSize='76.8px';
 }else{
 	document.querySelector('html').style.fontSize=document.documentElement.clientWidth/10+'px';
 }	
 $(window).on('resize',function(){
-	if(document.documentElement.clientWidth<1366){
-		document.querySelector('html').style.fontSize='136.6px';
+	if(document.documentElement.clientWidth<768){
+		document.querySelector('html').style.fontSize='76.8px';
 	}else{
 		document.querySelector('html').style.fontSize=document.documentElement.clientWidth/10+'px';
 	}
